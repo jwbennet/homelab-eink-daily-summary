@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.log*
+font/
+gcp-credentials.json
+last_rendered.txt
