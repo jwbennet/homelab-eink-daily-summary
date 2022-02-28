@@ -69,11 +69,11 @@ class Footer(object):
         temperature = f" | {weather.temperature}\u00B0 | "
         precipitation_icon = "\uf043"
         precipitation = f"{weather.precipitation}%"
-        (time_w, time_h) = black_image.textsize(time, font=self.config.header_font)
-        (icon_w, icon_h) = black_image.textsize(icon, font = self.config.weather_icon_font)
-        (temp_w, temp_h) = black_image.textsize(temperature, font=self.config.body_font)
-        (precip_icon_w, precip_icon_h) = black_image.textsize(precipitation_icon, font = self.config.weather_icon_font)
-        (precip_w, precip_h) = black_image.textsize(precipitation, font=self.config.body_font)
+        (time_w, time_h) = red_image.textsize(time, font=self.config.header_font)
+        (icon_w, icon_h) = red_image.textsize(icon, font = self.config.weather_icon_font)
+        (temp_w, temp_h) = red_image.textsize(temperature, font=self.config.body_font)
+        (precip_icon_w, precip_icon_h) = red_image.textsize(precipitation_icon, font = self.config.weather_icon_font)
+        (precip_w, precip_h) = red_image.textsize(precipitation, font=self.config.body_font)
 
         image_width = (icon_w + temp_w + precip_icon_w + 4 + precip_w)
         image_height = (time_h + 5 + max(icon_h, temp_h, precip_icon_h, precip_h) + 2)
